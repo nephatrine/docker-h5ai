@@ -1,4 +1,4 @@
-FROM nephatrine/nginx-php:latest
+FROM nephatrine/nginx-php:testing
 LABEL maintainer="Daniel Wolf <nephatrine@gmail.com>"
 
 RUN echo "====== INSTALL PACKAGES ======" \
