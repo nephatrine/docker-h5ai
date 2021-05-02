@@ -10,7 +10,7 @@ platform:
 steps:
 - name: build-testing
   commands:
-  - docker build --pull -t pdr.nephatrine.net/nephatrine/nginx-h5ai:testing .
+  - docker build -t pdr.nephatrine.net/nephatrine/nginx-h5ai:testing .
   - HOME=/mnt/config/home docker push pdr.nephatrine.net/nephatrine/nginx-h5ai:testing
   - docker tag pdr.nephatrine.net/nephatrine/nginx-h5ai:testing nephatrine/nginx-h5ai:testing
   - HOME=/mnt/config/home docker push nephatrine/nginx-h5ai:testing
@@ -42,6 +42,6 @@ trigger:
 
 ---
 kind: signature
-hmac: 5de34f89c59b9714d6692c33bd8d715cdb4a5013dd617c4c97354f673d229689
+hmac: f8da309916848ebeb1b39e40aa7450b4c1b8155b7f75ba3943c0b8044df3527c
 
 ...
